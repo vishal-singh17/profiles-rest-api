@@ -20,7 +20,8 @@ mkdir -p $PROJECT_BASE_PATH/env
 python3 -m venv $PROJECT_BASE_PATH/env
 
 # Install python packages
-$PROJECT_BASE_PATH/env/bin/pip install -r $PROJECT_BASE_PATH/requirement.txt
+$PROJECT_BASE_PATH/env/bin/pip install -r django==2.2 djangorestframework==3.9.2
+# """$PROJECT_BASE_PATH/requirement.txt"""
 $PROJECT_BASE_PATH/env/bin/pip install uwsgi==2.0.18
 
 # Run migrations and collectstatic
